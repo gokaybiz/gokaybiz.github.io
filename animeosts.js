@@ -4,3 +4,4 @@ playerekle.setAttribute("type","text/javascript");
 playerekle.setAttribute("src","http://scmplayer.co/script.js");
 playerekle.setAttribute("data-config","{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':" + muziklistem + "}");
 document.getElementsByTagName("head")[0].appendChild(playerekle);
+console.log("======== \n http://gokay.biz/ \n ========");

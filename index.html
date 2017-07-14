@@ -1,96 +1,83 @@
 <!DOCTYPE html>
-  <html lang="tr">
-  <head>
-    <meta charset="utf-8">
-    <title>Gökay Biz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gökay.BİZ hakkında!">
-    <meta name="google-site-verification" content="IhPweNu5-Ctp5H2HNulRc9Uj2LoY4UpS77AwPVqvpYU" />
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-      html {height: 95%;}
-      body {
-        height: 100%;
-        background: url(bg.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        font-family: 'Ubuntu', sans-serif;
-      }
-      .container {
-        margin-top: 10px;
-        display: table;
-        height: 100%;
-      }
-      .row {
-        min-width: 960px;
-        display: table-cell;
-        height: 100%;
-        vertical-align:middle;
-      }
-
-      h1 {color: #fff; font-family: 'Ubuntu', sans-serif; font-size:55px;}
-      h3 {color: lightgrey}
-      button {margin-right: 10px}
-      .social {
-        font-size: 190px; color:white; 
-        -webkit-transition:all .3s ease-out;
-        -moz-transition:all .3s ease-out;
-        -o-transition:all .3s ease-out;
-        -ms-transition:all .3s ease-out;
-        transition:all .3s ease-out;
-        text-decoration:none;
-      }
-      .social:hover {color:black}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-	<div class="col-md-6">
-	  <h1>Gökay Biz</h1>
-	  <h3>Backend Geliştirici</h3>
-	  <button type="button" class="btn btn-default btn-lg" onclick="alert('çok yakında!');"><i class="fa fa-file"></i> ÖZGEÇMİŞ</button>
-	  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#contactForm"><i class="fa fa-envelope"></i> İletişim</button>
-	</Div>
-	<div class="col-md-2">
-	  <a href="https://github.com/gokaybiz"><i class="fa fa-github-square social"></i></a>
-	</div>
-	<div class="col-md-2">  
-	  <a href="http://www.twitter.com/gokaymbiz"><i class="fa fa-twitter-square social"></i></a>
-	</div>
-	<div class="col-md-2">
-	  <a href="http://www.instagram.com/gokaybiz"><i class="fa fa-instagram social"></i></a>
-	</Div>
+<html lang="tr">
+   <head>
+      <meta charset="utf-8">
+      <title>Gökay Biz</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Gökay.BİZ hakkında!">
+      <meta name="google-site-verification" content="IhPweNu5-Ctp5H2HNulRc9Uj2LoY4UpS77AwPVqvpYU" />
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href='style.min.css' rel='stylesheet' type='text/css'>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1>Gökay Biz</h1>
+               <h3>Backend Geliştirici</h3>
+               <button type="button" class="btn btn-default btn-lg" onclick="alert('Çok yakında!');"><i class="fa fa-file"></i> Özgeçmiş</button>
+               <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#contactForm"><i class="fa fa-envelope"></i> Mesaj Bırak</button>
+            </Div>
+            <div class="col-md-2">
+               <a href="https://github.com/gokaybiz"><i class="fa fa-github-square social"></i></a>
+            </div>
+            <div class="col-md-2">  
+               <a href="http://www.twitter.com/gokaymbiz"><i class="fa fa-twitter-square social"></i></a>
+            </div>
+            <div class="col-md-2">
+               <a href="http://www.instagram.com/gokaybiz"><i class="fa fa-instagram social"></i></a>
+            </Div>
+         </div>
       </div>
-    </div>
-
-    <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-	<div class="modal-content">
-	  <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Mesaj bırak</h4>
-	  </div>
-	  <div class="modal-body">
-            <div class="input-group input-group-lg">
-	      <span class="input-group-addon">@</span>
-	      <input type="text" class="form-control" placeholder="Email">
-	    </div>
-	    <br />
-	    <textarea rows="5" class="form-control input-lg" placeholder="Mesaj..."></textarea>
-	  </div>
-	  <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Vazgeçtim</button>
-            <button type="button" class="btn btn-primary">İlet</button>
-	  </div>
-	</div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-  </body>
+      <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title">Mesaj bırak</h4>
+               </div>
+               <div class="modal-body">
+                  <p class="statusMsg"></p>
+                  <form class="form-horizontal" role="form" id="contact-form">
+                     <div class="form-group">
+                        <div class="col-sm-12"> 
+                           <input type="text" class="form-control" id="name" name="name" placeholder="İsim" required=""> 
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="col-sm-12"> 
+                           <input type="email" class="form-control" id="email" name="email" placeholder="Mail" required=""> 
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="col-sm-12"> 
+                           <textarea name="message" rows="4" required="" class="form-control" id="message" placeholder="Mesaj"></textarea> 
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="col-sm-12">
+                           <div class="g-recaptcha" data-sitekey="6LexKyEUAAAAAPFwHltBUDQ4Sgq67vDw5nzJDuKI"></div>
+                        </div>
+                     </div>
+               </div>
+               <div class="modal-footer">
+               <button type="button" id="cancel" class="btn btn-default" data-dismiss="modal">Vazgeçtim</button>
+               <button type="submit" id="submit" name="submit" class="btn btn-primary">İlet</button>
+               <!--end Form-->
+               </form>
+               </div>
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+      <script src="https://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <script src='contact.min.js'></script>
+   </body>
 </html>
